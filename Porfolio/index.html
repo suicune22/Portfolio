@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/S.png">
+    <script src="https://kit.fontawesome.com/91c9590b82.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logoseba.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, im <span>Seba</span><br>Garcia</h1>
+            </div>
+        </div>
+    </div>
+    <!------------- about -------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/backgrounddd.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a Student of Information Systems and Junior Front End Developer & Designer. My focus is mainly based on the design, layout and interaction of the Front End.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Html CSS Javascript</span><br>Desing Web/App Interfaces</li>
+                            <li><span>React Js</span><br>Web App Development</li>
+                            <li><span>Bootstrap</span><br>Web App Development</li>
+                            <li><span>Wordpress</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Information Systems - UNNE</li>
+                            <li><span>2021</span><br>Professional Front End Developer - UTN</li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+    </div>
+    </div>
+    <!-------------services------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Desing</h2>
+                    <p>Front End Development, especially from its layout to its interaction. Translation of the design of a site from an image or illustration to pure Html and Css code or with Frameworks</p>
+                    <a href="#">Learn more</a>
+                </div>
+             
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>CMS Content Editor</h2>
+                    <p>Experience making content updates to different CMS. Currently Drupal and Wordpress, but I have some ease to learn to use a new one.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-------------contact------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sebagarcia10@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/sebagarcia22/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/SebaGarcia9"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/sebastiangarcia22/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Cv Sebastian Garcia.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2022 Sebastian Garcia.</p> 
+            <p>All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+	|
+</body>
+</html>

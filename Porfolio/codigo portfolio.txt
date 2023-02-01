@@ -1,0 +1,66 @@
+//////<li><a href="#portfolio">Portfolio</a></li> /////
+
+
+
+<!-------------portfolio------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The apps connects you yo the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The apps connects you yo the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Shopping App</h3>
+                        <p>The apps connects you yo the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+
+//// Experiencie/////
+///////////////////
+<p class="tab-links" onclick="opentab('experience')">Experience</p>
+///////////////////
+
+<div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Desing training at ET institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Desing Executive at Coin Digital Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Intership at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+
+
+////////////////////////////////////////////////////////////////////
+
+   <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2>UX/UI Desing</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#">Learn more</a>
+                </div>
